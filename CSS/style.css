@@ -6,4 +6,52 @@ font-family: 'Poppins',sans-serif;
 /* <i class="fa-brands fa-facebook"></i>
 <i class="fa-brands fa-youtube"></i>
 <i class="fa-brands fa-instagram-square"></i> */
-*/
+
+/* Header Section Styles */
+body {
+    margin: 5% 5%;
+}
+
+.hero-section {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    width: 50%;
+    padding-left: 10%;
+}
+
+.hero-image {
+    width: 80%;
+    padding-left: 20%;
+}
+
+.header-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.header-pera {
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.header-button {
+    color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.header-button:hover {
+    color: white;
+    background-color: transparent;
+}
