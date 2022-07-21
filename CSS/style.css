@@ -119,14 +119,29 @@ a.active {
     gap: 20px;
 }
 
+.blog {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 2px;
+}
+
 .blog img {
     width: 100%;
 }
 
 .main-title {
-    border: 1px solid red;
+    border: 1px solid black;
     width: 67px;
-    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 4px 16px;
+    margin: 5px 0px;
+}
+
+.main-pera {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 5px 0px;
+
 }
 
 .main-icons {
@@ -148,50 +163,36 @@ a.active {
 }
 
 /* Footer Style */
-footer,
-footer a {
-    background: #161616;
-    color: rgb(194, 193, 193);
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    transition: .5s;
-}
-
 footer {
+    background: #161616;
+    color: white;
     padding: 10px 0;
+
 }
 
-footer h2 {
+.footer-heading {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 footer hr {
-    margin: 50px 0;
+    margin: 25px 0;
 }
 
-footer .footer-links {
+.footer-links {
     display: flex;
     justify-content: space-between;
 }
 
-footer p {
-    margin-top: 20px;
-    font-size: 30px;
+.footer-icons {
+    margin-top: 30px;
+    font-size: 25px;
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-footer .icons {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
+.footer-icons a {
+    text-decoration: none;
+    color: white;
 }
