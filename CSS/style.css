@@ -67,6 +67,60 @@ font-family: 'Poppins',sans-serif;
     background-color: transparent;
 }
 
+/* Main Section Style */
+.main-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.main-sidebar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0px 30px;
+    height: 362px;
+    width: 25%;
+}
+
+.main-menu {
+    color: black;
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-blogs {
+    width: 312px;
+    height: 362px;
+    border: 2px solid red;
+    margin-left: 20px;
+    width: 75%;
+}
+
+
+
+.main-title {
+    border: 1px solid red;
+    width: 67px;
+    padding: 5px 10px;
+}
+
+.main-icons {
+    display: flex;
+    align-items: center;
+}
+
 /* Footer Style */
 .footer-section {
     color: white;
