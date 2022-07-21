@@ -113,27 +113,15 @@ a.active {
     gap: 20px;
 }
 
-.main-menu {
-    color: black;
-    background-color: white;
-    margin: 30px;
-    padding: 20px;
-    border: 2px solid red;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.main-content {
+.main-blog {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.main-blogs {
-    width: 312px;
+.blog img {
+    width: 100%;
 }
-
-.blog {}
 
 .main-title {
     border: 1px solid red;
@@ -144,6 +132,19 @@ a.active {
 .main-icons {
     display: flex;
     align-items: center;
+}
+
+.chat-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.time-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
 }
 
 /* Footer Style */
