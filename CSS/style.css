@@ -194,3 +194,142 @@ footer hr {
     text-decoration: none;
     color: white;
 }
+
+/* Media Query for Mobile */
+@media screen and (max-width:576px) {
+    .container {
+        margin: 10px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        border-radius: 5px;
+    }
+
+    .heroContent {
+        padding: 28px 38px 21px 38px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .header-title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    button.btn-red {
+        margin-top: 30px;
+        padding: 8px 12px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    /*------------------------------------------------
+        show ellipse when mobile screen is enabled 
+    --------------------------------------------------*/
+    .header-pera {
+        overflow: hidden;
+        margin: 20px auto;
+        text-overflow: ellipsis;
+        max-height: 200px;
+    }
+
+    .header-button {
+        margin: 50px 0;
+    }
+
+    .hero-image {
+        padding: 0 10px;
+    }
+
+    /*--------------------------------
+     stack the thumbnail after buttons 
+    ----------------------------------*/
+    .main-blogs {
+        flex-direction: column;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .main-sidebar {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+        min-width: auto;
+    }
+
+    /*-----------------------
+      full width thumbnail 
+    ------------------------*/
+    .main-blog {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /*--------------------
+        footer section 
+    ----------------------*/
+    footer {
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-heading {
+        font-size: 24px;
+        padding-top: 24px;
+    }
+
+    .footer-links {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:991px) {
+    .container {
+        margin: 20px;
+    }
+
+    .hero-section {
+        border-radius: 5px;
+    }
+
+    .heroContent {
+        padding: 20px;
+    }
+
+    .header-title {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main-blogs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .main-sidebar a {
+        flex-grow: 1;
+    }
+
+    .main-blog {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
