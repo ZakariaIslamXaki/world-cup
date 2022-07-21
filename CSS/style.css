@@ -269,7 +269,7 @@ footer hr {
     }
 }
 
-@media screen and (min-width:577px) and (max-width:991px) {
+@media screen and (min-width:571px) and (max-width:991px) {
     .container {
         margin: 20px;
     }
@@ -316,6 +316,7 @@ footer hr {
 }
 
 /* Upcoming Matches Css */
+/* Main Section Css */
 .main-match {
     flex-grow: 1;
     display: grid;
@@ -357,13 +358,15 @@ footer hr {
     font-size: 15px;
 }
 
-@media screen and (max-width:576px) {
+/* Media Query for Mobiles */
+@media screen and (max-width:570px) {
     .main-match {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width:577px) and (max-width:992px) {
+/* Media Query for Table Devices */
+@media screen and (min-width:571px) and (max-width:992px) {
     .main-match {
         grid-template-columns: repeat(2, 1fr);
     }
