@@ -1,13 +1,4 @@
-/* Google Fonts
-font-family: 'Inter',sans-serif;
-font-family: 'Poppins',sans-serif;
-
-/* Font Awesome Icons */
-/* <i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-youtube"></i>
-<i class="fa-brands fa-instagram-square"></i> */
-
-/* Header Section Styles */
+/* Global CSS */
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +12,8 @@ font-family: 'Poppins',sans-serif;
     margin: 50px 140px;
 
 }
+
+/* Header Section Styles */
 
 .hero-section {
     color: white;
@@ -66,7 +59,7 @@ font-family: 'Poppins',sans-serif;
     color: white;
 }
 
-/* Main Section Style */
+/* Main Section Styles */
 .main-section {
     display: flex;
     margin-top: 50px;
@@ -160,7 +153,7 @@ a.active {
     margin-left: 10px;
 }
 
-/* Footer Style */
+/* Footer Section Style */
 footer {
     background: #161616;
     color: white;
@@ -195,8 +188,8 @@ footer hr {
     color: white;
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width:576px) {
+/* Media Query for Mobile Devices */
+@media screen and (max-width:570px) {
     .container {
         margin: 10px;
     }
@@ -225,9 +218,6 @@ footer hr {
         font-size: 15px;
     }
 
-    /*------------------------------------------------
-        show ellipse when mobile screen is enabled 
-    --------------------------------------------------*/
     .header-pera {
         overflow: hidden;
         margin: 20px auto;
@@ -243,9 +233,6 @@ footer hr {
         padding: 0 10px;
     }
 
-    /*--------------------------------
-     stack the thumbnail after buttons 
-    ----------------------------------*/
     .main-blogs {
         flex-direction: column;
         margin: 10px 0;
@@ -259,17 +246,11 @@ footer hr {
         min-width: auto;
     }
 
-    /*-----------------------
-      full width thumbnail 
-    ------------------------*/
     .main-blog {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    /*--------------------
-        footer section 
-    ----------------------*/
     footer {
         padding: 0;
         text-align: center;
@@ -331,5 +312,59 @@ footer hr {
     .main-blog {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+}
+
+/* Upcoming Matches Css */
+.main-match {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.match-date {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main-flags {
+    display: flex;
+    gap: 10px;
+}
+
+.main-images {
+    width: 100%;
+    height: auto;
+}
+
+.main-match-content {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.match-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.main-match-pera {
+    color: grey;
+    font-size: 15px;
+}
+
+@media screen and (max-width:576px) {
+    .main-match {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .main-match {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
