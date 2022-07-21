@@ -64,7 +64,6 @@ font-family: 'Poppins',sans-serif;
 
 .header-button:hover {
     color: white;
-    background-color: transparent;
 }
 
 /* Main Section Style */
@@ -98,8 +97,7 @@ font-family: 'Poppins',sans-serif;
 }
 
 a:hover {
-    opacity: 1;
-    transition: 0s;
+    color: red;
 }
 
 a.active {
